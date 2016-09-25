@@ -28,6 +28,4 @@ public class CrimeActivity extends SingleFragmentActivity {
         //return new CrimeFragment();
         return CrimeFragment.newInstance(crimeId);
     }
-
-
 }

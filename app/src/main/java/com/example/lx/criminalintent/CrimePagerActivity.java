@@ -14,7 +14,8 @@ import java.util.UUID;
 /**
  * Created by lx on 2016/9/19.
  */
-public class CrimePagerActivity extends FragmentActivity{
+public class CrimePagerActivity extends FragmentActivity
+    implements CrimeFragment.Callbacks{
     private ViewPager mViewPager;
     private ArrayList<Crime> mCrimes;
 
@@ -64,5 +65,7 @@ public class CrimePagerActivity extends FragmentActivity{
         });
     }
 
+    public void onCrimeUpdated(Crime crime) {
+    }
 
 }
